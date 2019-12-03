@@ -9,3 +9,4 @@ Project displays use of:
 
 - Async/Await using fetch
 - Javascript classes & methods (OOP)
+- Error handling
