@@ -32,7 +32,7 @@
 //   })
 // }
 
-//useing async await
+//using async await
 //using Fetch which has built in promises
 const getPuzzle = async (wordCount) => {
   const res = await fetch('http://puzzle.mead.io/puzzle?wordCount='+wordCount, {})
