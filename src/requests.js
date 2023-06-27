@@ -43,3 +43,5 @@ const getPuzzle = async (wordCount) => {
     throw new Error('unable to fetch the puzzle')
   }
 }
+
+export {getPuzzle as default}

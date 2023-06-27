@@ -3,7 +3,8 @@ const path = require('path')
 module.exports = {
   entry: ['babel-polyfill','./src/index.js'],
   output: {
-    path: path.resolve(__dirname, 'docs/scripts')
+    path: path.resolve(__dirname, 'docs/scripts'),
+    hashFunction: "sha256"
   },
   module: {
     rules: [{
