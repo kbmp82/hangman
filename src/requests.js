@@ -34,14 +34,17 @@
 
 //using async await with fetch to simplify code
 const getPuzzle = async (wordCount) => {
-  const res = await fetch('https://puzzle.mead.io/puzzle?wordCount=' + wordCount, {})
+  const res = await fetch(
+    "https://puzzle.mead.io/puzzle?wordCount=" + wordCount,
+    {}
+  );
 
   if (res.status === 200) {
-    const data = await res.json()
-    return data.puzzle
+    const data = await res.json();
+    return data.puzzle;
   } else {
-    throw new Error('unable to fetch the puzzle')
+    throw new Error("unable to fetch the puzzle");
   }
-}
+};
 
-export {getPuzzle as default}
+export { getPuzzle as default };
